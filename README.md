@@ -77,7 +77,7 @@ So we will use **Maven Solution**
 
 Just working step by step, you will create the first Spring Boot project
 
-1. Configure our project at [Spring Initializr](https://start.spring.io/)
+**Configure our project at [Spring Initializr](https://start.spring.io/)**
 
 - Project: In this, you can choose depend on your demand, in this course we will use **Maven Project**.
 
@@ -97,11 +97,9 @@ Just working step by step, you will create the first Spring Boot project
 
 - Add Dependencies: In this, click into and search the key word `Spring web` and choose the `Spring Web` to development the Spring Boot apps with **TomCat** and **Spring MVC**.
 
-2. Download the zip file: Just click into the button **Generate** to create the zip file of sources code from the website.
+Download the zip file: Just click into the button **Generate** to create the zip file of sources code from the website. Then Unzip the file into your folder.
 
-3. Unzip the file
-
-4. Import the project into our IDE.
+Import the project into our IDE.
 
 #### Frequently Asked Questions
 
