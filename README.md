@@ -97,9 +97,11 @@ Just working step by step, you will create the first Spring Boot project
 
 - Add Dependencies: In this, click into and search the key word `Spring web` and choose the `Spring Web` to development the Spring Boot apps with **TomCat** and **Spring MVC**.
 
-Download the zip file: Just click into the button **Generate** to create the zip file of sources code from the website. Then Unzip the file into your folder.
+**Download the zip file**
 
-Import the project into our IDE.
+Just click into the button **Generate** to create the zip file of sources code from the website. Then Unzip the file into your folder.
+
+**Import the project into our IDE.**
 
 #### Frequently Asked Questions
 
