@@ -79,13 +79,13 @@ Just working step by step, you will create the first Spring Boot project
 
 **Configure our project at [Spring Initializr](https://start.spring.io/)**
 
-- Project: In this, you can choose depend on your demand, in this course we will use **Maven Project**.
+- **Project**: In this, you can choose depend on your demand, in this course we will use **Maven Project**.
 
-- Language: In this course, the main languages we use is **Java**.
+- **Language**: In this course, the main languages we use is **Java**.
 
-- Spring Boot: This is one of the most important things we need to considered. In this option, you need choose the latest released version of Spring Boot. But please avoid the **Snapshot** versions since it is the alpha and beta version of this Spring Boot.
+- **Spring Boot**: This is one of the most important things we need to considered. In this option, you need choose the latest released version of Spring Boot. But please avoid the **Snapshot** versions since it is the alpha and beta version of this Spring Boot.
 
-- Project Metadata: In this, you will setting the name of your project and some of basic and important information for your source and project.
+- **Project Metadata**: In this, you will setting the name of your project and some of basic and important information for your source and project.
 
   - Group: This typically represents the base package name for your project. It often follows the reverse domain name convention (e.g., com.example).
   - Artifact: The artifact ID is the name of the project or module within the group. It uniquely identifies your project within the repository. (e.g., my-spring-app)
@@ -102,6 +102,10 @@ Just working step by step, you will create the first Spring Boot project
 Just click into the button **Generate** to create the zip file of sources code from the website. Then Unzip the file into your folder.
 
 **Import the project into our IDE.**
+
+Open your Intellij IDEA and click into open the project, after that choose the folder you just unzip and click open.
+
+Give it some time to import the project with maven and the dependencies in the maven setting of this project.
 
 #### Frequently Asked Questions
 
