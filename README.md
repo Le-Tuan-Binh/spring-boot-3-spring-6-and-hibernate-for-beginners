@@ -62,7 +62,7 @@ Spring Boot applications can be packaged as WAR files for deployment to external
 
 Deploy **WAR File (Web Application Archive)** to an **External Server**: TomCat, JBoss, WebSphere etc...
 
-#### 1.5 Maven Project in Java
+#### 1.5. Maven Project in Java
 
 When building your Java Project, you may need additional JAR Files, For example: Spring, Hibernate, Commons Logging, JSON etc...
 
@@ -72,6 +72,36 @@ So we will use **Maven Solution**
 
 - Tell the Maven the projects you are working with dependencies: Spring, Hibernate etc...
 - After that Maven will go out and download the JAR files for those projects for you, and Maven will make those JAR files available during compile and run.
+
+#### 1.6. Development Process
+
+Just working step by step, you will create the first Spring Boot project
+
+1. Configure our project at [Spring Initializr](https://start.spring.io/)
+
+- Project: In this, you can choose depend on your demand, in this course we will use **Maven Project**.
+
+- Language: In this course, the main languages we use is **Java**.
+
+- Spring Boot: This is one of the most important things we need to considered. In this option, you need choose the latest released version of Spring Boot. But please avoid the **Snapshot** versions since it is the alpha and beta version of this Spring Boot.
+
+- Project Metadata: In this, you will setting the name of your project and some of basic and important information for your source and project.
+
+  - Group: This typically represents the base package name for your project. It often follows the reverse domain name convention (e.g., com.example).
+  - Artifact: The artifact ID is the name of the project or module within the group. It uniquely identifies your project within the repository. (e.g., my-spring-app)
+  - Name: The display name of your project. This is a human-readable name that identifies your project.
+  - Description: A brief summary or description of your project's purpose and functionality.
+  - Package name: The base package namespace for your Java classes. It is recommended to use a meaningful and descriptive package structure.
+  - Packaging: Specifies whether the project should be packaged as a **JAR** (Java ARchive) or a **WAR** (Web Application ARchive) file.
+  - Java: Specifies the Java version compatibility for your project. Spring Boot supports various Java versions depending on the Spring Boot version used.
+
+- Add Dependencies: In this, click into and search the key word `Spring web` and choose the `Spring Web` to development the Spring Boot apps with **TomCat** and **Spring MVC**.
+
+2. Download the zip file: Just click into the button **Generate** to create the zip file of sources code from the website.
+
+3. Unzip the file
+
+4. Import the project into our IDE.
 
 #### Frequently Asked Questions
 
