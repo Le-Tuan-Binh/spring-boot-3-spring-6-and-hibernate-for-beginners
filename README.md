@@ -498,6 +498,7 @@ It save the time for developer from having to list all of the individual depende
 #### 2.10. More complex Spring Application
 
 If  we are building a Spring app that needs: Web, Security..., Simply select the dependencies in the `Spring Initializr`, it will add the appropriate `Spring Boot starters` to your pom.xml.
+
 ![alt text](/images/image-02.png)
 
 
