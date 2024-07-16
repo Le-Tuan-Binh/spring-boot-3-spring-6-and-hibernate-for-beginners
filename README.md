@@ -503,8 +503,9 @@ If  we are building a Spring app that needs: Web, Security..., Simply select the
 
 Some of famous Spring Boot Starters from the Spring Development Team is
 
-| spring-boot-starter-web      | Building web apps, includes validation, REST, Uses Tomcat as default embedded server. |
+| Dependencies                 | Description                                                                           |
 |------------------------------|---------------------------------------------------------------------------------------|
+| spring-boot-starter-web      | Building web apps, includes validation, REST, Uses Tomcat as default embedded server. |
 | spring-boot-starter-security | Adding Spring Security support                                                        |
 | spring-boot-starter-data-jpa | Spring database support with JPA and Hibernate                                        |
 
