@@ -447,7 +447,7 @@ public class SpringRestController {
 ```
 
 
-#### 2.6 Static content in Spring Boot Application
+#### 2.6. Static content in Spring Boot Application
 
 By default, Spring Boot will load static resources from `../static` directory folder in the proejct src.
 
@@ -455,7 +455,7 @@ In this folder, some of example of static resources like HTML files, CSS, Javasc
 
 **Notes:** Do not use the `src/main/webapp` directory if your application is packaged as a JAR. Although this is a standard Maven directory, it works only with WAR packaging. It silently ignored by most build tools if you generate a JAR.
 
-#### 2.7 Template in Spring Project
+#### 2.7. Template in Spring Project
 
 Spring Boot includes auto configuration for following template engines
 
@@ -466,7 +466,7 @@ Some of template engines we use is
 
 And by the defaults, Spring Boot will load templates from `../templates` directory. And Thymeleaf is one of the most popular template engine, we will use in this course.
 
-#### 2.8 Unit test in Spring Project
+#### 2.8. Unit test in Spring Project
 
 Spring Boot unit test class will automatically create by `Spring Initializr` when you create the first project in this websites.
 
