@@ -222,7 +222,13 @@ The benefit of this structure folder is: It is easy for new developer joinning a
 
 Some of the basic simple `pom.xml` file you can see below
 
-**Project coordinates:** The project coordinates uniquely identify the project and are used to manage dependencies. The group ID, artifact ID, and version number must be specified.
+**Project coordinates:** The project coordinates uniquely identify the project and are used to manage dependencies. The **group ID**, **artifact ID**, and **version** number must be specified.
+
+| Name        | Description                                                                                                   |
+| ----------- | ------------------------------------------------------------------------------------------------------------- |
+| Group ID    | Name of company, group or organization. Convention is use to reverse domain name **com.example**              |
+| Artifact Id | Name for this project                                                                                         |
+| Version     | A specific release version like: **1.0, 2.0**... If project is under active development then **1.0-SNAPSHOT** |
 
 ```xml
 <groupId>com.example</groupId>
