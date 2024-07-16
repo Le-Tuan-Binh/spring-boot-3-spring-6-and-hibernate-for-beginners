@@ -453,7 +453,7 @@ By default, Spring Boot will load static resources from `../static` directory fo
 
 In this folder, some of example of static resources like HTML files, CSS, Javascript files and images etc...
 
-> :warning: **Warning:** Do not use the `src/main/webapp` directory if your application is packaged as a JAR. Although this is a standard Maven directory, it works only with WAR packaging. It silently ignored by most build tools if you generate a JAR.
+**Notes:** Do not use the `src/main/webapp` directory if your application is packaged as a JAR. Although this is a standard Maven directory, it works only with WAR packaging. It silently ignored by most build tools if you generate a JAR.
 
 ### Frequently Asked Questions
 
