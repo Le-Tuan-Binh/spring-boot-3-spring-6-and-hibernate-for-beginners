@@ -501,7 +501,17 @@ If  we are building a Spring app that needs: Web, Security..., Simply select the
 
 ![alt text](/images/image-02.png)
 
+Some of famous Spring Boot Starters from the Spring Development Team is
 
+| spring-boot-starter-web      | Building web apps, includes validation, REST, Uses Tomcat as default embedded server. |
+|------------------------------|---------------------------------------------------------------------------------------|
+| spring-boot-starter-security | Adding Spring Security support                                                        |
+| spring-boot-starter-data-jpa | Spring database support with JPA and Hibernate                                        |
+
+
+#### 2.11. What is in the Starter?
+
+For the Intellij Users, Select View -> Tool Windows -> Maven Projects > Dependencies
 ### Frequently Asked Questions
 
 ```bash
