@@ -95,7 +95,7 @@ Just working step by step, you will create the first Spring Boot project
   - Packaging: Specifies whether the project should be packaged as a **JAR** (Java ARchive) or a **WAR** (Web Application ARchive) file.
   - Java: Specifies the Java version compatibility for your project. Spring Boot supports various Java versions depending on the Spring Boot version used.
 
-- Add Dependencies: In this, click into and search the key word `Spring web` and choose the `Spring Web` to development the Spring Boot apps with **TomCat** and **Spring MVC**.
+- **Add Dependencies**: In this, click into and search the key word `Spring web` and choose the `Spring Web` to development the Spring Boot apps with **TomCat** and **Spring MVC**.
 
 **Download the zip file**
 
@@ -210,15 +210,11 @@ The benefit of this structure folder is: It is easy for new developer joinning a
 
 **Maven Key Concepts**
 
-```bash
-pom.xml
-```
+> **pom.xml**
 
 POM (Project Object Model): Configuration file for your project, and always located in the root of your Maven project.
 
-```bash
-POM File Structure
-```
+> **POM File Structure**
 
 ### 2. Spring Boot - Create a REST Controller
 
