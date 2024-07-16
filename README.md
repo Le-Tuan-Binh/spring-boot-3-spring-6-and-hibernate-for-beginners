@@ -480,7 +480,7 @@ This is a collection of dependencies grouped together, by tested and verified by
 
 Make it much easier for the developer to get started with Spring, it reduces the amount of Maven configuration.
 
-### 2.10. Spring MVC Application
+#### 2.10. Spring MVC Application
 
 For example, when building a Spring MVC app, you mormally need many dependencies but the solution is not add all the dependencies, we only need `spring-boot-starter-web`, it provide many things include the all thing need to working with Spring MVC
 
@@ -495,7 +495,7 @@ The `Spring Boot Starter` not only include the Spring MVC, it is a collections o
 
 It save the time for developer from having to list all of the individual dependencies. Also, makes sure you have compatible versions.
 
-#### 2.10. More complex Spring Application
+#### 2.11. More complex Spring Application
 
 If  we are building a Spring app that needs: Web, Security..., Simply select the dependencies in the `Spring Initializr`, it will add the appropriate `Spring Boot starters` to your pom.xml.
 
@@ -510,9 +510,10 @@ Some of famous Spring Boot Starters from the Spring Development Team is
 | spring-boot-starter-data-jpa | Spring database support with JPA and Hibernate                                        |
 
 
-#### 2.11. What is in the Starter?
+#### 2.12. What is in the Starter?
 
 For the Intellij Users, Select View -> Tool Windows -> Maven Projects > Dependencies
+
 ### Frequently Asked Questions
 
 ```bash
