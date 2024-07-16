@@ -210,11 +210,63 @@ The benefit of this structure folder is: It is easy for new developer joinning a
 
 **Maven Key Concepts**
 
-> **pom.xml**
+**POM (Project Object Model)**: Configuration file for your project, and always located in the root of your Maven project.
 
-POM (Project Object Model): Configuration file for your project, and always located in the root of your Maven project.
+**POM File Structure**: POM file structure include three important information in the `pom.xml`, now we will see detail each information.
 
-> **POM File Structure**
+- `project meta data`: It include the Project name, Version and Output File Type: JAR, WAR, etc...
+
+- `dependencies`: This is list of projects we depend on like Spring, Hibernate, etc...
+
+- `plug-ins`: Additional custom tasks to run like generate JUnit test report, etc...
+
+Some of the basic simple `pom.xml` file you can see below
+
+**Project coordinates:** The project coordinates uniquely identify the project and are used to manage dependencies. The group ID, artifact ID, and version number must be specified.
+
+```xml
+<groupId>com.example</groupId>
+<artifactId>my-project</artifactId>
+<version>1.0.0</version>
+```
+
+**Dependencies**: This section lists all the dependencies required by the project. Maven automatically downloads and includes these dependencies in the project.
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+  </dependency>
+</dependencies>
+```
+
+**Build configuration**: This section specifies how the project should be built and includes information such as the project’s source code directory, output directory, and any plugins required for the build.
+
+```xml
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</build>
+```
+
+**Plugins**: Maven plugins are used to extend the build process. This section lists all the plugins required by the project.
+
+```xml
+<plugin>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-maven-plugin</artifactId>
+</plugin
+```
 
 ### 2. Spring Boot - Create a REST Controller
 
