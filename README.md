@@ -167,6 +167,59 @@ So we will need to know which directory is doing for what, by the description be
 - src/test: Unit testing code and properties.
 - target: Destination directory for compiled code, automatically created by Maven.
 
+If you are working with the web apps project, you will put your asset in the `src/main/webapp`. In this you will place the `JSP` files, or any `configuration` files, `CSS` files and images and so on.
+
+```bash
+maven-project/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── maven-project/
+│   │   │               ├── maven-project.java
+│   │   │               └── ...
+│   │   ├── resources/
+│   │   │   └── application.properties
+│   │   ├── webapp/
+│   │       ├── WEB-INF/
+│   │       │   ├── web.xml
+│   │       │   └── ...
+│   │       ├── META-INF/
+│   │       │   └── context.xml
+│   │       └── static/
+│   │           ├── css/
+│   │           │   └── style.css
+│   │           ├── js/
+│   │           │   └── script.js
+│   │           └── index.html
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── maven-project/
+│       │               ├── maven-project.java
+│       │               └── ...
+│       └── resources/
+├── target/
+└── ...
+```
+
+The benefit of this structure folder is: It is easy for new developer joinning a projedts. They can easily find code, properties file, unit test, web file etc...
+
+**Maven Key Concepts**
+
+```bash
+pom.xml
+```
+
+POM (Project Object Model): Configuration file for your project, and always located in the root of your Maven project.
+
+```bash
+POM File Structure
+```
+
 ### 2. Spring Boot - Create a REST Controller
 
 #### 2.1 Create a REST Controller
