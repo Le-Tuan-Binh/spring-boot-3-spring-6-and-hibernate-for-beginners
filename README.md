@@ -455,6 +455,23 @@ In this folder, some of example of static resources like HTML files, CSS, Javasc
 
 **Notes:** Do not use the `src/main/webapp` directory if your application is packaged as a JAR. Although this is a standard Maven directory, it works only with WAR packaging. It silently ignored by most build tools if you generate a JAR.
 
+#### 2.7 Template in Spring Project
+
+Spring Boot includes auto configuration for following template engines
+
+Some of template engines we use is
+- FreeMarker
+- Thymeleaf
+- Mustache
+
+And by the defaults, Spring Boot will load templates from `../templates` directory. And Thymeleaf is one of the most popular template engine, we will use in this course.
+
+#### 2.8 Unit test in Spring Project
+
+Spring Boot unit test class will automatically create by `Spring Initializr` when you create the first project in this websites.
+
+You can add the unit test in the file that auto generate.
+
 ### Frequently Asked Questions
 
 ```bash
