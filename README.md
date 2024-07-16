@@ -361,6 +361,21 @@ mvn clean compile test
 
 `pom.xml` includes information that you give entered into Spring Initializr website when you create the new Spring project.
 
+#### 2.5. Application Properties
+
+By default, Spring Boot will load properties from: **application.properties**
+
+By default, it files is empty, you can add some `Spring Boot Properties` 
+
+```bash
+server.port=8585
+```
+
+Not only the properties of Spring Boot Application, you can add your own custom properties 
+
+```bash
+user.name=Le Tuan Binh
+```
 
 #### Frequently Asked Questions
 
