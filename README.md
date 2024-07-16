@@ -120,6 +120,53 @@ Additional Spring Modules built-on top of the core Spring framework. So use only
 
 You can go to [Spring](https://spring.io/) to read the document of this framework, it not really have all things but it is one of the good practices for Spring developer.
 
+#### 1.8 Spring Boot with Maven Project
+
+**What is Maven ?**
+
+Maven is a Project Management tool, most of popular use of Maven is for build management and dependencies.
+
+When building an Java project, you may need many additional JAR files, for example: Spring, Hibernate, Commons Logging and JSON etc...
+
+One of the traditional approach is to download the JAR file from each project website and then manual add the JAR files to your build path / classpath.
+
+So just thinking if you are developer, you need go to each website of each JAR file to download and manual add each into your project. It very match many problems when the version is change or something. So **Maven Project** can help you manage it easily.
+
+The Maven tell the project which dependencies the project are working with like Spring, Hibernate etc... Maven will go out and download the JAR files automatically for those project for you. It also make the JAR files is available during compile and run.
+
+Just look at the image below, you can have the good look how maven work with your apps when compile and run.
+
+![How it work Maven ?](./images/image-01.png)
+
+When it retrieves a project dependency, it will also download supporting dependencies, for example: Spring depends on the common-logging... So when you give Maven to use Spring, it will be automagically download the common-logging for your project.
+
+**Standard Directory Structure**
+
+Normally, when you join to a new project, each development team dreams up their own directory structure, so it very not ideal for new commer and not standardized. So Maven give the standard directory structure.
+
+```bash
+└───maven-project
+  ├───pom.xml
+  └───src
+      ├───main
+      │   ├───java
+      │   ├───resources
+      │   ├───filters
+      │   └───webapp
+      ├───test
+      │   ├───java
+      │   ├───resources
+      │   └───filters
+```
+
+So we will need to know which directory is doing for what, by the description below we can have the overview of each folder in project.
+
+- src/main/java: This is an folder to store your Java code for your project.
+- src/main/resources: Properties, Config files used by your apps.
+- src/main/webapp: JSP Files and web config files other web assets (image, css, js, etc...)
+- src/test: Unit testing code and properties.
+- target: Destination directory for compiled code, automatically created by Maven.
+
 ### 2. Spring Boot - Create a REST Controller
 
 #### 2.1 Create a REST Controller
