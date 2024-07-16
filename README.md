@@ -394,9 +394,7 @@ user.password=ltbinh
 
 We can use those value in the class or somewhere in the project src like below, however this code below just one of the many way to use the value in `application.properties` we can have more way to use.
 
-```bash
-Using @Value Annotation
-```
+> **`Using @Value Annotation`**
 
 ```java
 import org.springframework.beans.factory.annotation.Value;
@@ -418,9 +416,9 @@ public class SpringRestController {
 }
 ```
 
-```bash
-Using Environment Object
-```
+
+> **`Using Environment Object`**
+
 
 ```java
 import org.springframework.beans.factory.annotation.Autowired;
