@@ -371,13 +371,13 @@ By default, it files is empty, you can add some `Spring Boot Properties`
 server.port=8585
 ```
 
-Not only the properties of Spring Boot Application, you can add your own custom properties 
+Not only the properties of Spring Boot Application, you can add your `own custom properties` 
 
 ```bash
 user.name=Le Tuan Binh
 ```
 
-#### Frequently Asked Questions
+### Frequently Asked Questions
 
 ```bash
 1. Does Spring Boot replace Spring MVC, Spring Rest etc... ?
