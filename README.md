@@ -392,7 +392,7 @@ user.name=Le Tuan Binh
 user.password=ltbinh
 ```
 
-We can use those value in the class or somewhere in the project src like below, however this code below just one of the many way to use the value in `application.properties` we can have more way to use.
+We can use those value in the class or somewhere in the project src like below, however this code below just one of the many way to use the value in `application.properties` we can have more way to use:
 
 > **`Using @Value Annotation`**
 
@@ -445,6 +445,15 @@ public class SpringRestController {
     }
 }
 ```
+
+
+#### 2.6 Static content in Spring Boot Application
+
+By default, Spring Boot will load static resources from `../static` directory folder in the proejct src.
+
+In this folder, some of example of static resources like HTML files, CSS, Javascript files and images etc...
+
+> :warning: **Warning:** Do not use the `src/main/webapp` directory if your application is packaged as a JAR. Although this is a standard Maven directory, it works only with WAR packaging. It silently ignored by most build tools if you generate a JAR.
 
 ### Frequently Asked Questions
 
