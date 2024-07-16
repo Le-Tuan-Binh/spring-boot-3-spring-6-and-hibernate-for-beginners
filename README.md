@@ -274,6 +274,10 @@ Some of the basic simple `pom.xml` file you can see below
 </plugin
 ```
 
+**GAV(GroupID - ArtifactId - Version)**: You can see some of this referred in some books or document to make it more easily to read and not too long to remember.
+
+You can find the dependencies coordinates you want with 2 option. The first option is go to the website of each dependencies and get each them or you can find all thing in (Maven Central Repository)[https://central.sonatype.com/] it will be easily to find and download then the option 1.
+
 ### 2. Spring Boot - Create a REST Controller
 
 #### 2.1 Create a REST Controller
