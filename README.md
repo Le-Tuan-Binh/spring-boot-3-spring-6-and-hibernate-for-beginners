@@ -472,6 +472,35 @@ Spring Boot unit test class will automatically create by `Spring Initializr` whe
 
 You can add the unit test in the file that auto generate.
 
+#### 2.9. Spring Boot Starters
+
+This is a curated list of Maven dependencies to develope a new Spring Boot Project with Maven more easily.
+
+This is a collection of dependencies grouped together, by tested and verified by the Spring Development team. 
+
+Make it much easier for the developer to get started with Spring, it reduces the amount of Maven configuration.
+
+### 2.10. Spring MVC Application
+
+For example, when building a Spring MVC app, you mormally need many dependencies but the solution is not add all the dependencies, we only need `spring-boot-starter-web`, it provide many things include the all thing need to working with Spring MVC
+
+```java
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+The `Spring Boot Starter` not only include the Spring MVC, it is a collections of Maven dependencies like `spring-web`, `srping-webmvc`, `hibernate-validator`, `json`, `tomcat`...
+
+It save the time for developer from having to list all of the individual dependencies. Also, makes sure you have compatible versions.
+
+#### 2.10. More complex Spring Application
+
+If  we are building a Spring app that needs: Web, Security..., Simply select the dependencies in the `Spring Initializr`, it will add the appropriate `Spring Boot starters` to your pom.xml.
+![alt text](/images/image-02.png)
+
+
 ### Frequently Asked Questions
 
 ```bash
