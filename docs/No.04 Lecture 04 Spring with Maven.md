@@ -14,7 +14,7 @@ The Maven tell the project which dependencies the project are working with like 
 
 Just look at the image below, you can have the good look how maven work with your apps when compile and run.
 
-![How it work Maven ?](./images/image-01.png)
+![How it work Maven ?](/images/image-01.png)
 
 When it retrieves a project dependency, it will also download supporting dependencies, for example: Spring depends on the common-logging... So when you give Maven to use Spring, it will be automagically download the common-logging for your project.
 
