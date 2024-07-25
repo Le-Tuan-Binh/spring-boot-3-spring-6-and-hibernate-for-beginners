@@ -1,5 +1,4 @@
 # Ignore specific zip files
-spring-boot-3-spring-6-hibernate-for-beginners.zip
-spring-boot.zip
+sources
 
 # Ignore other specific
