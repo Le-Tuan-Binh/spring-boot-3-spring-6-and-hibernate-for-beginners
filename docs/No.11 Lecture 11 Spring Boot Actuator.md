@@ -119,6 +119,61 @@ You will see all the beans of the `spring` application you include in the `depen
 
 3. Edit `application.properties` to customize `/info`
 
+### 6. Spring Boot Actuator Security
+
+You may not want to expose all of this information about your spring project. So you need add Spring Security to project and all endpoints are need to secured.
+
+So go to the `pom.xml` add the dependency `spring-boot-starter-security` into the `dependencies`
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency
+```
+
+However, the endpoints `/heath` still available, you can disable it if you want. 
+
+### 7. Endpoints Secured
+
+Now when you access to the endpoints `/actuator/beans`, Spring Security will prompt you to the form to login page.
+
+Now you need to know the name and password. With the username is default `user`, and you need to find the password in the console of running applications.
+
+![alt text](/images/image-03.png)
+
+### 8. Spring Security Configuration
+
+You can override the default user name and generated password by go to the `/src/main/resources/application.properties` and add the code with the format
+
+```xml
+spring.security.user.name=<username>
+spring.security.user.password=<password>
+```
+
+For example you can add modify the account for the admin like the code below
+
+```xml
+spring.security.user.name=admin
+spring.security.user.password=admin
+```
+
+You can customize Spring Security for the Spring Boot Actuator by use the database for roles, encrypted, passwords, etc...
+
+### 9. Excluding Endpoints
+
+Sometimes you want to exclude some of endpoints like `/health`, or `/info` you need to config in the `/src/main/resources/application.properties` the code below
+
+```xml
+# Exclude individual endpoints with a comma-delimited list
+#
+management.endpoints.web.exposure.exclude = health, info
+```
+
+To learn more about the Endpoints, we can read it in the main documents of [Spring Actuator](https://docs.spring.io/spring-boot/reference/actuator/endpoints.html#page-title).
+
+
+
 
 
 
