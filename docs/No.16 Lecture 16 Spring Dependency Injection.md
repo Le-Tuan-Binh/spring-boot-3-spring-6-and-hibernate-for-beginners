@@ -115,3 +115,7 @@ public class CoachController {
     }
 }
 ```
+### 5. When the IDE say "No Usages" ?
+
+Spring Framework is dynamic and IDE may not be able to determine if a given class or method is use at run time.
+
