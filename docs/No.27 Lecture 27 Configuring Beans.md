@@ -23,11 +23,27 @@ This is basiclly a configuration class for configuring Spring using our custom a
 @Configuration
 public class SportConfig {
     @Bean
-    public Coach CricketCoach() {
-        return new CricketCoach();
+    public Coach swimCoach() {
+        return new SwimCoach();
     }
 }
 ```
+
+We also can modify the Bean Id like the code below
+
+```java
+@Configuration
+public class SportConfig {
+    @Bean("aquatic")
+    public Coach swimCoach() {
+        return new SwimCoach();
+    }
+}
+```
+
+Now when in the controller you can see use the id `aquatic`.
+
+
 
 **Step 3: Inject the bean into our controller**
 
@@ -36,7 +52,7 @@ public class SportConfig {
 public class CoachController {
     private Coach coach;
     @Autowired
-    public CoachController(@Qualifier("cricketCoach") Coach coach) {
+    public CoachController(@Qualifier("swimCoach") Coach coach) {
         this.coach = coach;
     }
     @GetMapping("/dailyworkout")
