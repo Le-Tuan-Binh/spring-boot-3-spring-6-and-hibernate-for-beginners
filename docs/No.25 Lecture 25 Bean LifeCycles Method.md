@@ -63,7 +63,7 @@ public class CricketCoach implements Coach {
 }
 ```
 
-### 3. Prototype Beans and Destroy Lifecycle
+### 4. Prototype Beans and Destroy Lifecycle
 
 There is a subtle point you need to be aware of with **prototype** scoped beans.
 
