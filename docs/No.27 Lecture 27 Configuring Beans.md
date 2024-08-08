@@ -43,8 +43,6 @@ public class SportConfig {
 
 Now when in the controller you can see use the id `aquatic`.
 
-
-
 **Step 3: Inject the bean into our controller**
 
 ```java
